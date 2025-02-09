@@ -46,19 +46,22 @@ button.submit-btn:hover {
   background-color: #219150;
 }
 .back-btn {
-  display: block;
-  width: 200px;
-  margin: 10px auto;
-  padding: 10px;
-  font-size: 16px;
-  color: white;
-  background-color: #34495e;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
+    display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center text */
+    width: 220px; /* Increase button width */
+    height: 50px; /* Increase button height */
+    margin: 20px auto; /* Center button */
+    padding: 12px 20px; /* Adjust padding */
+    font-size: 18px; /* Increase text size */
+    color: white;
+    background-color: #34495e;
+    border: none;
+    border-radius: 8px; /* More rounded */
+    cursor: pointer;
+    text-align: center;
 }
 
 .back-btn:hover {
-  background-color: #2c3e50;
+    background-color: #2c3e50;
 }
