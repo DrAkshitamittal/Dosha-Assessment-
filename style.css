@@ -46,22 +46,19 @@ button.submit-btn:hover {
   background-color: #219150;
 }
 .back-btn {
-    display: flex; 
+    display: flex;
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center text */
-    width: 220px; /* Increase button width */
-    height: 50px; /* Increase button height */
-    margin: 20px auto; /* Center button */
-    padding: 12px 20px; /* Adjust padding */
-    font-size: 18px; /* Increase text size */
+    align-items: center; /* Center text vertically */
+    width: 100%; /* Ensure it spans the available width */
+    max-width: 250px; /* Set a max width */
+    height: 50px; /* Adjust button height */
+    margin: 20px auto; /* Center the button */
+    padding: 12px 20px;
+    font-size: 18px;
     color: white;
     background-color: #34495e;
     border: none;
-    border-radius: 8px; /* More rounded */
+    border-radius: 8px;
     cursor: pointer;
     text-align: center;
-}
-
-.back-btn:hover {
-    background-color: #2c3e50;
 }
