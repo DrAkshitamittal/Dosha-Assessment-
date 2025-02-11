@@ -5,14 +5,14 @@
   background-color: #fff5f8; /* Soft pastel pink background */
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: 'Cherry Bomb One', cursive, sans-serif; /* New playful font */
-}
+  font-family: 'Cherry Bomb One', sans-serif; /* Non-cursive, clean font */
+C
 
 #prakritiVikritiQuiz h2,
 #prakritiVikritiQuiz h3,
 #prakritiVikritiQuiz h4 {
   text-align: center;
-  color: #ff6f61; /* Pastel coral for headings */
+  color: #3498db; /* Blue color for questions */
   font-size: 24px; /* Larger font size for headings */
 }
 
@@ -21,17 +21,17 @@
   padding: 15px;
   margin: 10px 0;
   border: 1px solid #ffccd5; /* Soft pastel border */
-  background-color: #fff0f5; /* Light pastel pink */
+  background-color: #ffebee; /* Light pastel red for answer options */
   cursor: pointer;
   text-align: left;
   border-radius: 10px;
   font-size: 18px; /* Larger font size for options */
-  color: #5a5a5a; /* Soft gray text */
+  color: #e74c3c; /* Red color for answer text */
   transition: background-color 0.3s ease;
 }
 
 .option:hover {
-  background-color: #ffd1dc; /* Lighter pastel pink on hover */
+  background-color: #ffcdd2; /* Lighter pastel red on hover */
 }
 
 .selected {
