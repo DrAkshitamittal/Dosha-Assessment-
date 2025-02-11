@@ -2,59 +2,76 @@
   max-width: 700px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  font-family: Arial, sans-serif;
+  background-color: #fff5f8; /* Soft pastel pink background */
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
 }
-#prakritiVikritiQuiz h2, 
-#prakritiVikritiQuiz h3, 
+
+#prakritiVikritiQuiz h2,
+#prakritiVikritiQuiz h3,
 #prakritiVikritiQuiz h4 {
   text-align: center;
-  color: #2c3e50;
+  color: #ff6f61; /* Pastel coral for headings */
+  font-size: 24px; /* Larger font size for headings */
 }
+
 .option {
   display: block;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ffccd5; /* Soft pastel border */
+  background-color: #fff0f5; /* Light pastel pink */
   cursor: pointer;
   text-align: left;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 18px; /* Larger font size for options */
+  color: #5a5a5a; /* Soft gray text */
+  transition: background-color 0.3s ease;
 }
+
 .option:hover {
-  background-color: #e0e0e0;
+  background-color: #ffd1dc; /* Lighter pastel pink on hover */
 }
+
 .selected {
-  background-color: #27ae60;
+  background-color: #a2d5f2; /* Pastel blue for selected options */
   color: white;
 }
+
 button.submit-btn {
   display: block;
   width: 100%;
-  background-color: #27ae60;
+  background-color: #ff6f61; /* Pastel coral for submit button */
   color: white;
-  padding: 10px;
+  padding: 15px;
   border: none;
-  border-radius: 5px;
-  font-size: 18px;
+  border-radius: 10px;
+  font-size: 20px; /* Larger font size for button */
   cursor: pointer;
   margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
+
 button.submit-btn:hover {
-  background-color: #219150;
+  background-color: #ff4a4a; /* Slightly darker coral on hover */
 }
-.back-button {
+
+.back-btn {
   display: block;
-  width: 200px; /* Adjust width as needed */
-  margin: 20px auto; /* Centers the button horizontally */
-  padding: 15px; /* Adjust padding for height */
-  font-size: 16px; /* Adjust font size */
-  text-align: center;
-  background-color: #04AA6D; /* Button color */
+  width: 250px; /* Wider button */
+  margin: 20px auto; /* Centered */
+  padding: 15px;
+  font-size: 18px; /* Larger font size */
   color: white;
+  background-color: #a2d5f2; /* Pastel blue */
   border: none;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 10px;
   cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #79b8e2; /* Slightly darker pastel blue on hover */
 }
