@@ -244,10 +244,16 @@ function updateLanguage() {
   console.log("Updating language to:", currentLanguage);
   document.getElementById("quizTitle").textContent = translations[currentLanguage].quizTitle;
   document.getElementById("section1Title").textContent = translations[currentLanguage].section1Title;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1C").textContent = translations[currentLanguage].q1C;
+  document.getElementById("section2Title").textContent = translations[currentLanguage].section2Title;
+  document.getElementById("section3Title").textContent = translations[currentLanguage].section3Title;
+  // Update questions and options
+  for (let i = 1; i <= 15; i++) {
+    document.getElementById(`q${i}`).textContent = translations[currentLanguage][`q${i}`];
+    document.getElementById(`q${i}A`).textContent = translations[currentLanguage][`q${i}A`];
+    document.getElementById(`q${i}B`).textContent = translations[currentLanguage][`q${i}B`];
+    document.getElementById(`q${i}C`).textContent = translations[currentLanguage][`q${i}C`];
+  }
+    // Update buttons
   document.getElementById("submitBtn").textContent = translations[currentLanguage].submitBtn;
   document.getElementById("backBtn").textContent = translations[currentLanguage].backBtn;
   document.getElementById("languageToggle").textContent = translations[currentLanguage].languageToggle;
