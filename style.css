@@ -1,3 +1,20 @@
+#languageToggle {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #3498db; /* Blue color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#languageToggle:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
 #prakritiVikritiQuiz {
   max-width: 700px;
   margin: 20px auto;
