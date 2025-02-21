@@ -252,6 +252,14 @@ function updateLanguage() {
     document.getElementById(`q${i}A`).textContent = translations[currentLanguage][`q${i}A`];
     document.getElementById(`q${i}B`).textContent = translations[currentLanguage][`q${i}B`];
     document.getElementById(`q${i}C`).textContent = translations[currentLanguage][`q${i}C`];
+     // Update options (A, B, C)
+    ['A', 'B', 'C'].forEach(option => {
+      const optionId = `${questionId}${option}`;
+      const optionElement = document.getElementById(optionId);
+      if (optionElement) {
+        optionElement.textContent = translations[currentLanguage][optionId];
+      }
+    });
   }
     // Update buttons
   document.getElementById("submitBtn").textContent = translations[currentLanguage].submitBtn;
