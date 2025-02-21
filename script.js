@@ -258,6 +258,7 @@ updateLanguage();
 
 // Calculate and display the results
 function calculateResults() {
+  console.log("Calculate Results Called");
   // Calculate General Prakriti scores (from q1 to q5)
   let generalScores = { Vata: 0, Pitta: 0, Kapha: 0 };
   ['q1', 'q2', 'q3', 'q4', 'q5'].forEach(q => {
