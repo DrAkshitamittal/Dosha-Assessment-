@@ -215,6 +215,7 @@ const translations = {
 // Add event listeners to all option elements
 document.querySelectorAll('.option').forEach(option => {
   option.addEventListener('click', function() {
+    console.log("Option clicked:",this);
     const question = this.getAttribute('data-question');
     const value = this.getAttribute('data-value');
     
