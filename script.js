@@ -246,6 +246,7 @@ function updateLanguage() {
   document.getElementById("section1Title").textContent = translations[currentLanguage].section1Title;
   document.getElementById("section2Title").textContent = translations[currentLanguage].section2Title;
   document.getElementById("section3Title").textContent = translations[currentLanguage].section3Title;
+  
   // Update questions and options
    for (let i = 1; i <= 15; i++) {
     const questionId = `q${i}`;
