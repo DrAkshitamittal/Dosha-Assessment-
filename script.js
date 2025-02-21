@@ -140,28 +140,29 @@ function calculateResults() {
     Kapha: "✅ Kapha Shampoo <br>✅ Kapha Hair Oil <br>✅ Kapha Saffron Facewash <br>✅ Kapha Kumkumadi Oil"
   };
   
-  // Display results and summary of selections
+   // Display results and summary of selections
   document.getElementById("result").innerHTML = `
-    <h3>Your General Prakriti (Natural Constitution): ${prakriti}</h3>
-    <h3>Your Current Vikriti (Imbalance): ${vikriti}</h3>
-    <h4>Your Selections:</h4>
-    <p><strong>Body Frame (q1):</strong> ${selections.q1 || "Not Answered"}</p>
-    <p><strong>Skin Type (q2):</strong> ${selections.q2 || "Not Answered"}</p>
-    <p><strong>Stress Response (q3):</strong> ${selections.q3 || "Not Answered"}</p>
-    <p><strong>Natural Hair Texture (q4):</strong> ${selections.q4 || "Not Answered"}</p>
-    <p><strong>Natural Appetite (q5):</strong> ${selections.q5 || "Not Answered"}</p>
-    <p><strong>Scalp Condition (hair1):</strong> ${selections.hair1 || "Not Answered"}</p>
-    <p><strong>Hair Fall (hair2):</strong> ${selections.hair2 || "Not Answered"}</p>
-    <p><strong>Current Hair Texture (hair3):</strong> ${selections.hair3 || "Not Answered"}</p>
-    <p><strong>Dandruff Frequency (hair4):</strong> ${selections.hair4 || "Not Answered"}</p>
-    <p><strong>Hair Shine (hair5):</strong> ${selections.hair5 || "Not Answered"}</p>
-    <p><strong>Skin Reaction (skin1):</strong> ${selections.skin1 || "Not Answered"}</p>
-    <p><strong>Acne/Breakouts (skin2):</strong> ${selections.skin2 || "Not Answered"}</p>
-    <p><strong>Skin Texture (skin3):</strong> ${selections.skin3 || "Not Answered"}</p>
-    <p><strong>Skin Moisture (skin4):</strong> ${selections.skin4 || "Not Answered"}</p>
-    <p><strong>Overall Skin Appearance (skin5):</strong> ${selections.skin5 || "Not Answered"}</p>
-    <h4>For balancing ${vikriti}, consider these AKS Herbal products:</h4>
-    <p>${products[vikriti]}</p>
+    <h3>${translations[currentLanguage].resultTitle}</h3>
+    <h3>${translations[currentLanguage].prakritiTitle} ${prakriti}</h3>
+    <h3>${translations[currentLanguage].vikritiTitle} ${vikriti}</h3>
+    <h4>${translations[currentLanguage].selectionsTitle}</h4>
+    <p><strong>Body Frame (q1):</strong> ${selections.q1 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Skin Type (q2):</strong> ${selections.q2 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Stress Response (q3):</strong> ${selections.q3 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Natural Hair Texture (q4):</strong> ${selections.q4 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Natural Appetite (q5):</strong> ${selections.q5 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Scalp Condition (hair1):</strong> ${selections.hair1 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Hair Fall (hair2):</strong> ${selections.hair2 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Current Hair Texture (hair3):</strong> ${selections.hair3 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Dandruff Frequency (hair4):</strong> ${selections.hair4 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Hair Shine (hair5):</strong> ${selections.hair5 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Skin Reaction (skin1):</strong> ${selections.skin1 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Acne/Breakouts (skin2):</strong> ${selections.skin2 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Skin Texture (skin3):</strong> ${selections.skin3 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Skin Moisture (skin4):</strong> ${selections.skin4 || translations[currentLanguage].notAnswered}</p>
+    <p><strong>Overall Skin Appearance (skin5):</strong> ${selections.skin5 || translations[currentLanguage].notAnswered}</p>
+    <h4>${translations[currentLanguage].productsTitle.replace("${vikriti}", vikriti)}</h4>
+    <p>${translations[currentLanguage].products[vikriti]}</p>
   `;
 }
 function goBack() {
