@@ -19,6 +19,98 @@ document.querySelectorAll('.option').forEach(option => {
     this.classList.add('selected');
   });
 });
+// Translations for English and Hindi
+const translations = {
+  en: {
+    quizTitle: "Find Your Prakriti & Vikriti (Understand your Ayurvedic Constitution)",
+    section1Title: "General Prakriti & Vikriti",
+    q1: "1. What is your natural body frame?",
+    q1A: "1) Thin & Light",
+    q1B: "2) Medium & Athletic",
+    q1C: "3) Broad & Sturdy",
+    q2: "2. How is your skin type naturally?",
+    q2A: "A) Dry & Rough",
+    q2B: "B) Sensitive & Prone to Redness",
+    q2C: "C) Oily & Thick",
+    submitBtn: "Submit",
+    backBtn: "⬅️ Back to Website",
+    languageToggle: "Switch to Hindi",
+  },
+  hi: {
+    quizTitle: "अपनी प्रकृति और विकृति जानें (आयुर्वेदिक संविधान को समझें)",
+    section1Title: "सामान्य प्रकृति और विकृति",
+    q1: "1. आपकी प्राकृतिक शारीरिक संरचना कैसी है?",
+    q1A: "1) पतली और हल्की",
+    q1B: "2) मध्यम और एथलेटिक",
+    q1C: "3) चौड़ी और मजबूत",
+    q2: "2. आपकी त्वचा का प्राकृतिक प्रकार कैसा है?",
+    q2A: "A) शुष्क और खुरदरी",
+    q2B: "B) संवेदनशील और लालिमा प्रवण",
+    q2C: "C) तैलीय और मोटी",
+    submitBtn: "जमा करें",
+    backBtn: "⬅️ वेबसाइट पर वापस जाएं",
+    languageToggle: "अंग्रेजी में बदलें",
+  },
+};
+
+let currentLanguage = "en"; // Default language
+
+// Function to toggle between English and Hindi
+function toggleLanguage() {
+  currentLanguage = currentLanguage === "en" ? "hi" : "en";
+  updateLanguage();
+}
+
+// Function to update the quiz content based on the selected language
+function updateLanguage() {
+  document.getElementById("quizTitle").textContent = translations[currentLanguage].quizTitle;
+  document.getElementById("section1Title").textContent = translations[currentLanguage].section1Title;
+  document.getElementById("q1").textContent = translations[currentLanguage].q1;
+  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q1C").textContent = translations[currentLanguage].q1C;
+  document.getElementById("q2").textContent = translations[currentLanguage].q2;
+  document.getElementById("q2A").textContent = translations[currentLanguage].q2A;
+  document.getElementById("q2B").textContent = translations[currentLanguage].q2B;
+  document.getElementById("q2C").textContent = translations[currentLanguage].q2C;
+  document.getElementById("submitBtn").textContent = translations[currentLanguage].submitBtn;
+  document.getElementById("backBtn").textContent = translations[currentLanguage].backBtn;
+  document.getElementById("languageToggle").textContent = translations[currentLanguage].languageToggle;
+}
+
+// Initialize the quiz in the default language
+updateLanguage();
+
+const translations = {
+  en: {
+    // Existing English translations...
+    resultTitle: "Your Results",
+    prakritiTitle: "Your General Prakriti (Natural Constitution):",
+    vikritiTitle: "Your Current Vikriti (Imbalance):",
+    selectionsTitle: "Your Selections:",
+    notAnswered: "Not Answered",
+    productsTitle: "For balancing ${vikriti}, consider these AKS Herbal products:",
+    products: {
+      Vata: "✅ Vata Shampoo <br>✅ Vata Hair Oil <br>✅ Vata Saffron Facewash <br>✅ Vata Kumkumadi Oil",
+      Pitta: "✅ Pitta Shampoo <br>✅ Pitta Hair Oil <br>✅ Pitta Saffron Facewash <br>✅ Pitta Kumkumadi Oil",
+      Kapha: "✅ Kapha Shampoo <br>✅ Kapha Hair Oil <br>✅ Kapha Saffron Facewash <br>✅ Kapha Kumkumadi Oil",
+    },
+  },
+  hi: {
+    // Existing Hindi translations...
+    resultTitle: "आपके परिणाम",
+    prakritiTitle: "आपकी सामान्य प्रकृति (प्राकृतिक संविधान):",
+    vikritiTitle: "आपकी वर्तमान विकृति (असंतुलन):",
+    selectionsTitle: "आपके चयन:",
+    notAnswered: "उत्तर नहीं दिया गया",
+    productsTitle: "${vikriti} को संतुलित करने के लिए, इन एकेएस हर्बल उत्पादों पर विचार करें:",
+    products: {
+      Vata: "✅ वात शैम्पू <br>✅ वात हेयर ऑयल <br>✅ वात सैफ्रॉन फेसवॉश <br>✅ वात कुमकुमादी तेल",
+      Pitta: "✅ पित्त शैम्पू <br>✅ पित्त हेयर ऑयल <br>✅ पित्त सैफ्रॉन फेसवॉश <br>✅ पित्त कुमकुमादी तेल",
+      Kapha: "✅ कफ शैम्पू <br>✅ कफ हेयर ऑयल <br>✅ कफ सैफ्रॉन फेसवॉश <br>✅ कफ कुमकुमादी तेल",
+    },
+  },
+};
 
 // Calculate and display the results
 function calculateResults() {
