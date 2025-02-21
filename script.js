@@ -20,6 +20,22 @@ document.querySelectorAll('.option').forEach(option => {
     this.classList.add('selected');
   });
 });
+function toggleLanguage() {
+  console.log("Language toggle clicked!");
+  currentLanguage = currentLanguage === "en" ? "hi" : "en";
+  updateLanguage();
+}
+
+function updateLanguage() {
+  console.log("Updating language to:", currentLanguage);
+  document.getElementById("quizTitle").textContent = translations[currentLanguage].quizTitle;
+  document.getElementById("section1Title").textContent = translations[currentLanguage].section1Title;
+  document.getElementById("q1").textContent = translations[currentLanguage].q1;
+  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q1C").textContent = translations[currentLanguage].q1C;
+  // Add more lines for other elements...
+}
 // Translations for English and Hindi
 const translations = {
   en: {
