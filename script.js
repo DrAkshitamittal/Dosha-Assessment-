@@ -1,3 +1,4 @@
+console.log("Script loaded!");
 // Object to store user selections
 let selections = {};
 
