@@ -9,119 +9,123 @@
     
 </head>
 <body>
+  <!-- Language Toggle Button -->
+  <button id="languageToggle" onclick="toggleLanguage()">Switch to Hindi</button>
+  
+  
 <!-- partial:index.partial.html -->
 <div id="prakritiVikritiQuiz">
-  <h2>Find Your Prakriti & Vikriti( Understand your Ayurvedic Constitution)</h2>
+  <h2 id="quiz title">Find Your Prakriti & Vikriti( Understand your Ayurvedic Constitution)</h2>
 
   
   <!-- General Prakriti & Vikriti Section (5 Questions) -->
-  <h3>General Prakriti & Vikriti</h3>
+  <h3 id="section1Title">General Prakriti & Vikriti</h3>
   
   <!-- Q1 -->
-  <h3>1. What is your natural body frame?</h3>
-  <div class="option" data-question="q1" data-value="Vata">1) Thin & Light</div>
-  <div class="option" data-question="q1" data-value="Pitta">2) Medium & Athletic</div>
-  <div class="option" data-question="q1" data-value="Kapha">3) Broad & Sturdy</div>
+  <h3 id="q1">1. What is your natural body frame?</h3>
+  <div class="option" data-question="q1" data-value="Vata"id="q1A">1) Thin & Light</div>
+  <div class="option" data-question="q1" data-value="Pitta"id="q1B">2) Medium & Athletic</div>
+  <div class="option" data-question="q1" data-value="Kapha"id="q1C">3) Broad & Sturdy</div>
   
   <!-- Q2 -->
-  <h3>2. How is your skin type naturally?</h3>
-  <div class="option" data-question="q2" data-value="Vata">A) Dry & Rough</div>
-  <div class="option" data-question="q2" data-value="Pitta">B) Sensitive & Prone to Redness</div>
-  <div class="option" data-question="q2" data-value="Kapha">C) Oily & Thick</div>
+  <h3 id="q2">2. How is your skin type naturally?</h3>
+  <div class="option" data-question="q2" data-value="Vata"id="q2A">A) Dry & Rough</div>
+  <div class="option" data-question="q2" data-value="Pitta"id="q2B">B) Sensitive & Prone to Redness</div>
+  <div class="option" data-question="q2" data-value="Kapha"id="q2C">C) Oily & Thick</div>
   
   <!-- Q3 -->
-  <h3>3. How do you react to stress?</h3>
-  <div class="option" data-question="q3" data-value="Vata">1) Anxious & Worry a lot</div>
-  <div class="option" data-question="q3" data-value="Pitta">2) Irritable & Angry</div>
-  <div class="option" data-question="q3" data-value="Kapha">3) Calm & Steady</div>
+  <h3 id="q3">3. How do you react to stress?</h3>
+  <div class="option" data-question="q3" data-value="Vata"id="q3A">1) Anxious & Worry a lot</div>
+  <div class="option" data-question="q3" data-value="Pitta"id="q3B">2) Irritable & Angry</div>
+  <div class="option" data-question="q3" data-value="Kapha"id="q3C">3) Calm & Steady</div>
   
   <!-- Q4 -->
-  <h3>4. What is your natural hair texture?</h3>
-  <div class="option" data-question="q4" data-value="Vata">A) Thin, dry, and brittle</div>
-  <div class="option" data-question="q4" data-value="Pitta">B) Soft, straight, and fine</div>
-  <div class="option" data-question="q4" data-value="Kapha">C) Thick, wavy, and strong</div>
+  <h3 id="q4">4. What is your natural hair texture?</h3>
+  <div class="option" data-question="q4" data-value="Vata"id="q4A">A) Thin, dry, and brittle</div>
+  <div class="option" data-question="q4" data-value="Pitta"id="q4B">B) Soft, straight, and fine</div>
+  <div class="option" data-question="q4" data-value="Kapha"id="q4C">C) Thick, wavy, and strong</div>
   
   <!-- Q5 -->
-  <h3>5. How is your natural appetite?</h3>
-  <div class="option" data-question="q5" data-value="Vata">A) Irregular and variable appetite</div>
-  <div class="option" data-question="q5" data-value="Pitta">B) Strong and balanced appetite</div>
-  <div class="option" data-question="q5" data-value="Kapha">C) Slow and steady appetite</div>
+  <h3 id="q5">5. How is your natural appetite?</h3>
+  <div class="option" data-question="q5" data-value="Vata"id="q5A">A) Irregular and variable appetite</div>
+  <div class="option" data-question="q5" data-value="Pitta"id="q5B">B) Strong and balanced appetite</div>
+  <div class="option" data-question="q5" data-value="Kapha"id="q5C">C) Slow and steady appetite</div>
   
   <!-- Hair Vikriti Section (5 Questions) -->
-  <h3>Hair Vikriti (Current Hair Issues)</h3>
+  <h3 id="section2Title">Hair Vikriti (Current Hair Issues)</h3>
   
   <!-- Q6 -->
-  <h3>6. How is your scalp condition?</h3>
-  <div class="option" data-question="hair1" data-value="Vata">A) Dry, flaky</div>
-  <div class="option" data-question="hair1" data-value="Pitta">B) Sensitive, itchy</div>
-  <div class="option" data-question="hair1" data-value="Kapha">C) Oily, sticky</div>
+  <h3 id="q6">6. How is your scalp condition?</h3>
+  <div class="option" data-question="hair1" data-value="Vata"id="q6A">A) Dry, flaky</div>
+  <div class="option" data-question="hair1" data-value="Pitta"id="q6B">B) Sensitive, itchy</div>
+  <div class="option" data-question="hair1" data-value="Kapha"id="q6C">C) Oily, sticky</div>
   
   <!-- Q7 -->
-  <h3>7. What type of hair fall do you experience?</h3>
-  <div class="option" data-question="hair2" data-value="Vata">1) Thin, breakage-prone</div>
-  <div class="option" data-question="hair2" data-value="Pitta">2) Sudden, excessive shedding</div>
-  <div class="option" data-question="hair2" data-value="Kapha">3) Heavy, but slow hair loss</div>
+  <h3 id="q7">7. What type of hair fall do you experience?</h3>
+  <div class="option" data-question="hair2" data-value="Vata"id="q7A">1) Thin, breakage-prone</div>
+  <div class="option" data-question="hair2" data-value="Pitta"id="q7B">2) Sudden, excessive shedding</div>
+  <div class="option" data-question="hair2" data-value="Kapha"id="q7C">3) Heavy, but slow hair loss</div>
   
   <!-- Q8 -->
-  <h3>8. How is your current hair texture?</h3>
-  <div class="option" data-question="hair3" data-value="Vata">A) Frizzy and dry</div>
-  <div class="option" data-question="hair3" data-value="Pitta">B) Fine and limp</div>
-  <div class="option" data-question="hair3" data-value="Kapha">C) Thick and greasy</div>
+  <h3 id="q8">8. How is your current hair texture?</h3>
+  <div class="option" data-question="hair3" data-value="Vata"id="q8A">A) Frizzy and dry</div>
+  <div class="option" data-question="hair3" data-value="Pitta"id="q8B">B) Fine and limp</div>
+  <div class="option" data-question="hair3" data-value="Kapha"id="q8C">C) Thick and greasy</div>
   
   <!-- Q9 -->
-  <h3>9. How often do you experience dandruff?</h3>
-  <div class="option" data-question="hair4" data-value="Vata">A) Frequently, due to dryness</div>
-  <div class="option" data-question="hair4" data-value="Pitta">B) Occasionally, mild flaking</div>
-  <div class="option" data-question="hair4" data-value="Kapha">C) Rarely, if ever</div>
+  <h3 id="q9">9. How often do you experience dandruff?</h3>
+  <div class="option" data-question="hair4" data-value="Vata"id="q9A">A) Frequently, due to dryness</div>
+  <div class="option" data-question="hair4" data-value="Pitta"id="q9B">B) Occasionally, mild flaking</div>
+  <div class="option" data-question="hair4" data-value="Kapha"id="q9C">C) Rarely, if ever</div>
   
   <!-- Q10 -->
-  <h3>10. How is the shine of your hair?</h3>
-  <div class="option" data-question="hair5" data-value="Vata">A) Dull and lackluster</div>
-  <div class="option" data-question="hair5" data-value="Pitta">B) Moderate shine</div>
-  <div class="option" data-question="hair5" data-value="Kapha">C) Very shiny and oily</div>
+  <h3 id="q10">10. How is the shine of your hair?</h3>
+  <div class="option" data-question="hair5" data-value="Vata"id="q10A">A) Dull and lackluster</div>
+  <div class="option" data-question="hair5" data-value="Pitta"id="q10B">B) Moderate shine</div>
+  <div class="option" data-question="hair5" data-value="Kapha"id="q10C">C) Very shiny and oily</div>
   
   <!-- Skin Vikriti Section (5 Questions) -->
-  <h3>Skin Vikriti (Current Skin Issues)</h3>
+  <h3 id="section3Title">Skin Vikriti (Current Skin Issues)</h3>
   
   <!-- Q11 -->
-  <h3>11. How does your skin react to weather changes?</h3>
-  <div class="option" data-question="skin1" data-value="Vata">A) Becomes drier, rougher</div>
-  <div class="option" data-question="skin1" data-value="Pitta">B) Prone to redness and irritation</div>
-  <div class="option" data-question="skin1" data-value="Kapha">C) Becomes greasier, dull</div>
+  <h3 id="q11">11. How does your skin react to weather changes?</h3>
+  <div class="option" data-question="skin1" data-value="Vata"id="q11A">A) Becomes drier, rougher</div>
+  <div class="option" data-question="skin1" data-value="Pitta"id="q11B">B) Prone to redness and irritation</div>
+  <div class="option" data-question="skin1" data-value="Kapha"id="q11C">C) Becomes greasier, dull</div>
   
   <!-- Q12 -->
-  <h3>12. How often do you get acne or breakouts?</h3>
-  <div class="option" data-question="skin2" data-value="Vata">A) Rarely, but skin is dry</div>
-  <div class="option" data-question="skin2" data-value="Pitta">B) Frequently, red and inflamed</div>
-  <div class="option" data-question="skin2" data-value="Kapha">C) Occasional but deep cystic acne</div>
+  <h3 id="q12">12. How often do you get acne or breakouts?</h3>
+  <div class="option" data-question="skin2" data-value="Vata"id="q12A">A) Rarely, but skin is dry</div>
+  <div class="option" data-question="skin2" data-value="Pitta"id="q12B">B) Frequently, red and inflamed</div>
+  <div class="option" data-question="skin2" data-value="Kapha"id="q12C">C) Occasional but deep cystic acne</div>
   
   <!-- Q13 -->
-  <h3>13. How is your current skin texture?</h3>
-  <div class="option" data-question="skin3" data-value="Vata">A) Flaky and rough</div>
-  <div class="option" data-question="skin3" data-value="Pitta">B) Sensitive and reactive</div>
-  <div class="option" data-question="skin3" data-value="Kapha">C) Smooth and thick</div>
+  <h3 id"q13">13. How is your current skin texture?</h3>
+  <div class="option" data-question="skin3" data-value="Vata"id="q13A">A) Flaky and rough</div>
+  <div class="option" data-question="skin3" data-value="Pitta"id="q13B">B) Sensitive and reactive</div>
+  <div class="option" data-question="skin3" data-value="Kapha"id="q13C">C) Smooth and thick</div>
   
   <!-- Q14 -->
-  <h3>14. How is your skin moisture?</h3>
-  <div class="option" data-question="skin4" data-value="Vata">A) Very dry</div>
-  <div class="option" data-question="skin4" data-value="Pitta">B) Balanced moisture</div>
-  <div class="option" data-question="skin4" data-value="Kapha">C) Oily and moist</div>
+  <h3 id="q14">14. How is your skin moisture?</h3>
+  <div class="option" data-question="skin4" data-value="Vata"id="q14A">A) Very dry</div>
+  <div class="option" data-question="skin4" data-value="Pitta"id="q14B">B) Balanced moisture</div>
+  <div class="option" data-question="skin4" data-value="Kapha"id="q14C">C) Oily and moist</div>
   
   <!-- Q15 -->
-  <h3>15. How is your skin’s overall appearance?</h3>
-  <div class="option" data-question="skin5" data-value="Vata">A) Dull and patchy</div>
-  <div class="option" data-question="skin5" data-value="Pitta">B) Clear but prone to redness</div>
-  <div class="option" data-question="skin5" data-value="Kapha">C) Glowing but can be congested</div>
+  <h3 id="q15">15. How is your skin’s overall appearance?</h3>
+  <div class="option" data-question="skin5" data-value="Vata"id="q15A">A) Dull and patchy</div>
+  <div class="option" data-question="skin5" data-value="Pitta"id="q15B">B) Clear but prone to redness</div>
+  <div class="option" data-question="skin5" data-value="Kapha"id="q15C">C) Glowing but can be congested</div>
   
   <!-- Submit Button -->
   <br>
-  <button class="submit-btn" onclick="calculateResults()">Submit</button>
+  <button class="submit-btn" onclick="calculateResults()"id="submitBtn">Submit</button>
   
   <!-- Results Display -->
   <div id="result"></div>
 </div>
 
-<button class="back-btn"onclick="window.location.href='http://aksherbal.com';">⬅️ Back to Website</button>
+<button class="back-btn"onclick="window.location.href='http://aksherbal.com';"id="backBtn">⬅️ Back to Website</button>
 
   <script  src="./script.js"></script>
 
