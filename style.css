@@ -92,3 +92,15 @@ button.submit-btn:hover {
 .back-btn:hover {
   background-color: #79b8e2; /* Slightly darker pastel blue on hover */
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #prakritiVikritiQuiz {
+    padding: 10px;
+  }
+
+  .option, button.submit-btn, .back-btn, #languageToggle {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
