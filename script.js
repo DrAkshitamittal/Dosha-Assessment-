@@ -254,7 +254,7 @@ function updateLanguage() {
   document.getElementById("q2A").textContent = translations[currentLanguage].q2A;
   document.getElementById("q2B").textContent = translations[currentLanguage].q2B;
   document.getElementById("q2C").textContent = translations[currentLanguage].q2C;
-    document.getElementById("q3").textContent = translations[currentLanguage].q3;
+  document.getElementById("q3").textContent = translations[currentLanguage].q3;
   document.getElementById("q3A").textContent = translations[currentLanguage].q3A;
   document.getElementById("q3B").textContent = translations[currentLanguage].q3B;
   document.getElementById("q3C").textContent = translations[currentLanguage].q3C;
