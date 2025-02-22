@@ -89,7 +89,6 @@ button.submit-btn:hover {
   text-align: center;
   transition: background-color 0.3s ease;
 }
-
 .back-btn:hover {
   background-color: #79b8e2; /* Slightly darker pastel blue on hover */
 }
