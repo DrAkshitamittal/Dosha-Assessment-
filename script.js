@@ -250,30 +250,23 @@ function updateLanguage() {
   document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
   document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
   document.getElementById("q1C").textContent = translations[currentLanguage].q1C;
-  // Update questions and options
-   for (let i = 1; i <= 15; i++) {
-    const questionId = `q${i}`;
-    console.log("Updating question:", questionId);
-    const questionElement = document.getElementById(questionId);
-    if (questionElement) {
-      questionElement.textContent = translations[currentLanguage][questionId];
-    } else {
-      console.error("Question element not found:", questionId);
-    }
-
-    ['A', 'B', 'C'].forEach(option => {
-      const optionId = `${questionId}${option}`;
-      console.log("Updating option:", optionId);
-      const optionElement = document.getElementById(optionId);
-      if (optionElement) {
-        optionElement.textContent = translations[currentLanguage][optionId];
-      } else {
-        console.error("Option element not found:", optionId);
-      }
-    });
-  }
-}
-    // Update buttons
+  document.getElementById("q2").textContent = translations[currentLanguage].q2;
+  document.getElementById("q2A").textContent = translations[currentLanguage].q2A;
+  document.getElementById("q2B").textContent = translations[currentLanguage].q2B;
+  document.getElementById("q2C").textContent = translations[currentLanguage].q2C;
+    document.getElementById("q3").textContent = translations[currentLanguage].q3;
+  document.getElementById("q3A").textContent = translations[currentLanguage].q3A;
+  document.getElementById("q3B").textContent = translations[currentLanguage].q3B;
+  document.getElementById("q3C").textContent = translations[currentLanguage].q3C;
+  document.getElementById("q4").textContent = translations[currentLanguage].q4;
+  document.getElementById("q4A").textContent = translations[currentLanguage].q4A;
+  document.getElementById("q4B").textContent = translations[currentLanguage].q4B;
+  document.getElementById("q4C").textContent = translations[currentLanguage].q4C;
+  document.getElementById("q5")textContent = translations[currentLanguage].q5;
+  document.getElementById("q5A").textContent = translations[currentLanguage].q5A;
+  document.getElementById("q5B").textContent = translations[currentLanguage].q5B;
+  document.getElementById("q5C").textContent = translations[currentLanguage].q5C;
+  // Update buttons
   document.getElementById("submitBtn").textContent = translations[currentLanguage].submitBtn;
   document.getElementById("backBtn").textContent = translations[currentLanguage].backBtn;
   document.getElementById("languageToggle").textContent = translations[currentLanguage].languageToggle;
