@@ -246,7 +246,10 @@ function updateLanguage() {
   document.getElementById("section1Title").textContent = translations[currentLanguage].section1Title;
   document.getElementById("section2Title").textContent = translations[currentLanguage].section2Title;
   document.getElementById("section3Title").textContent = translations[currentLanguage].section3Title;
-  
+  document.getElementById("q1").textContent = translations[currentLanguage].q1;
+  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q1C").textContent = translations[currentLanguage].q1C;
   // Update questions and options
    for (let i = 1; i <= 15; i++) {
     const questionId = `q${i}`;
