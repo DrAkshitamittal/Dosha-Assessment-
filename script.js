@@ -17,9 +17,9 @@ const translations = {
 
     // General Prakriti & Vikriti (Q1-Q5)
     q1: "1. What is your natural body frame?",
-    q1A: "1) Thin & Light",
-    q1B: "2) Medium & Athletic",
-    q1C: "3) Broad & Sturdy",
+    q1A: "A) Thin & Light",
+    q1B: "B) Medium & Athletic",
+    q1C: "C) Broad & Sturdy",
 
     q2: "2. How is your skin type naturally?",
     q2A: "A) Dry & Rough",
@@ -27,9 +27,9 @@ const translations = {
     q2C: "C) Oily & Thick",
 
     q3: "3. How do you react to stress?",
-    q3A: "1) Anxious & Worry a lot",
-    q3B: "2) Irritable & Angry",
-    q3C: "3) Calm & Steady",
+    q3A: "A) Anxious & Worry a lot",
+    q3B: "B) Irritable & Angry",
+    q3C: "C) Calm & Steady",
 
     q4: "4. What is your natural hair texture?",
     q4A: "A) Thin, dry, and brittle",
@@ -48,9 +48,9 @@ const translations = {
     q6C: "C) Oily, sticky",
 
     q7: "7. What type of hair fall do you experience?",
-    q7A: "1) Thin, breakage-prone",
-    q7B: "2) Sudden, excessive shedding",
-    q7C: "3) Heavy, but slow hair loss",
+    q7A: "A) Thin, breakage-prone",
+    q7B: "B) Sudden, excessive shedding",
+    q7C: "C) Heavy, but slow hair loss",
 
     q8: "8. How is your current hair texture?",
     q8A: "A) Frizzy and dry",
@@ -123,9 +123,9 @@ const translations = {
     q1C: "3) चौड़ी और मजबूत",
 
     q2: "2. आपकी त्वचा का प्राकृतिक प्रकार कैसा है?",
-    q2A: "A) शुष्क और खुरदरी",
-    q2B: "B) संवेदनशील और लालिमा प्रवण",
-    q2C: "C) तैलीय और मोटी",
+    q2A: "1) शुष्क और खुरदरी",
+    q2B: "2) संवेदनशील और लालिमा प्रवण",
+    q2C: "3) तैलीय और मोटी",
 
     q3: "3. तनाव पर आपकी प्रतिक्रिया कैसी होती है?",
     q3A: "1) चिंतित और बहुत चिंता करते हैं",
@@ -133,20 +133,20 @@ const translations = {
     q3C: "3) शांत और स्थिर",
 
     q4: "4. आपके बालों का प्राकृतिक बनावट कैसा है?",
-    q4A: "A) पतले, शुष्क और भंगुर",
-    q4B: "B) नरम, सीधे और महीन",
-    q4C: "C) घने, लहरदार और मजबूत",
+    q4A: "1) पतले, शुष्क और भंगुर",
+    q4B: "2) नरम, सीधे और महीन",
+    q4C: "3) घने, लहरदार और मजबूत",
 
     q5: "5. आपकी प्राकृतिक भूख कैसी है?",
-    q5A: "A) अनियमित और परिवर्तनशील",
-    q5B: "B) मजबूत और संतुलित",
-    q5C: "C) धीमी और स्थिर",
+    q5A: "1) अनियमित और परिवर्तनशील",
+    q5B: "2) मजबूत और संतुलित",
+    q5C: "3) धीमी और स्थिर",
 
     // Hair Vikriti (Q6-Q10)
     q6: "6. आपकी स्कैल्प की स्थिति कैसी है?",
-    q6A: "A) शुष्क, रूसीयुक्त",
-    q6B: "B) संवेदनशील, खुजली वाली",
-    q6C: "C) तैलीय, चिपचिपी",
+    q6A: "1) शुष्क, रूसीयुक्त",
+    q6B: "2) संवेदनशील, खुजली वाली",
+    q6C: "3) तैलीय, चिपचिपी",
 
     q7: "7. आपको किस प्रकार के बाल झड़ने का अनुभव होता है?",
     q7A: "1) पतले, टूटने वाले",
@@ -154,45 +154,45 @@ const translations = {
     q7C: "3) भारी, लेकिन धीमी गति से",
 
     q8: "8. आपके बालों की वर्तमान बनावट कैसी है?",
-    q8A: "A) रूखे और शुष्क",
-    q8B: "B) महीन और लटके हुए",
-    q8C: "C) घने और चिकने",
+    q8A: "1) रूखे और शुष्क",
+    q8B: "2) महीन और लटके हुए",
+    q8C: "3) घने और चिकने",
 
     q9: "9. आपको कितनी बार रूसी होती है?",
-    q9A: "A) अक्सर, शुष्कता के कारण",
-    q9B: "B) कभी-कभी, हल्की रूसी",
-    q9C: "C) शायद ही कभी",
+    q9A: "1) अक्सर, शुष्कता के कारण",
+    q9B: "2) कभी-कभी, हल्की रूसी",
+    q9C: "3) शायद ही कभी",
 
     q10: "10. आपके बालों की चमक कैसी है?",
-    q10A: "A) मंद और फीकी",
-    q10B: "B) मध्यम चमक",
-    q10C: "C) बहुत चमकदार और तैलीय",
+    q10A: "1) मंद और फीकी",
+    q10B: "2) मध्यम चमक",
+    q10C: "3) बहुत चमकदार और तैलीय",
 
     // Skin Vikriti (Q11-Q15)
     q11: "11. मौसम परिवर्तन पर आपकी त्वचा की प्रतिक्रिया कैसी होती है?",
-    q11A: "A) अधिक शुष्क और खुरदरी हो जाती है",
-    q11B: "B) लालिमा और जलन प्रवण",
-    q11C: "C) अधिक तैलीय और मंद हो जाती है",
+    q11A: "1) अधिक शुष्क और खुरदरी हो जाती है",
+    q11B: "2) लालिमा और जलन प्रवण",
+    q11C: "3) अधिक तैलीय और मंद हो जाती है",
 
     q12: "12. आपको मुंहासे या ब्रेकआउट कितनी बार होते हैं?",
-    q12A: "A) शायद ही कभी, लेकिन त्वचा शुष्क है",
-    q12B: "B) अक्सर, लाल और सूजन वाले",
-    q12C: "C) कभी-कभी, लेकिन गहरे सिस्टिक मुंहासे",
+    q12A: "1) शायद ही कभी, लेकिन त्वचा शुष्क है",
+    q12B: "2) अक्सर, लाल और सूजन वाले",
+    q12C: "3) कभी-कभी, लेकिन गहरे सिस्टिक मुंहासे",
 
     q13: "13. आपकी त्वचा की वर्तमान बनावट कैसी है?",
-    q13A: "A) रूखी और खुरदरी",
-    q13B: "B) संवेदनशील और प्रतिक्रियाशील",
-    q13C: "C) चिकनी और मोटी",
+    q13A: "1) रूखी और खुरदरी",
+    q13B: "2) संवेदनशील और प्रतिक्रियाशील",
+    q13C: "3) चिकनी और मोटी",
 
     q14: "14. आपकी त्वचा की नमी कैसी है?",
-    q14A: "A) बहुत शुष्क",
-    q14B: "B) संतुलित नमी",
-    q14C: "C) तैलीय और नम",
+    q14A: "1) बहुत शुष्क",
+    q14B: "2) संतुलित नमी",
+    q14C: "3) तैलीय और नम",
 
     q15: "15. आपकी त्वचा की समग्र उपस्थिति कैसी है?",
-    q15A: "A) मंद और धब्बेदार",
-    q15B: "B) साफ लेकिन लालिमा प्रवण",
-    q15C: "C) चमकदार लेकिन रोमछिद्र बंद हो सकते हैं",
+    q15A: "1) मंद और धब्बेदार",
+    q15B: "2) साफ लेकिन लालिमा प्रवण",
+    q15C: "3) चमकदार लेकिन रोमछिद्र बंद हो सकते हैं",
 
     // Results Section
     resultTitle: "आपके परिणाम",
@@ -266,36 +266,46 @@ function updateLanguage() {
   document.getElementById("q5A").textContent = translations[currentLanguage].q5A;
   document.getElementById("q5B").textContent = translations[currentLanguage].q5B;
   document.getElementById("q5C").textContent = translations[currentLanguage].q5C;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
-  document.getElementById("q1").textContent = translations[currentLanguage].q1;
-  document.getElementById("q1A").textContent = translations[currentLanguage].q1A;
-  document.getElementById("q1B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q6").textContent = translations[currentLanguage].q1;
+  document.getElementById("q6A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q6B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q6C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q7").textContent = translations[currentLanguage].q1;
+  document.getElementById("q7A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q7B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q7C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q8").textContent = translations[currentLanguage].q1;
+  document.getElementById("q8A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q8B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q8C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q9").textContent = translations[currentLanguage].q1;
+  document.getElementById("q9A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q9B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q9C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q10").textContent = translations[currentLanguage].q1;
+  document.getElementById("q10A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q10B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q10C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q11").textContent = translations[currentLanguage].q1;
+  document.getElementById("q11A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q11B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q11C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q12").textContent = translations[currentLanguage].q1;
+  document.getElementById("q12A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q12B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q12C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q13").textContent = translations[currentLanguage].q1;
+  document.getElementById("q13A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q13B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q13C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q14").textContent = translations[currentLanguage].q1;
+  document.getElementById("q14A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q14B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q14C").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q15").textContent = translations[currentLanguage].q1;
+  document.getElementById("q15A").textContent = translations[currentLanguage].q1A;
+  document.getElementById("q15B").textContent = translations[currentLanguage].q1B;
+  document.getElementById("q15C").textContent = translations[currentLanguage].q1B;
   // Update buttons
   document.getElementById("submitBtn").textContent = translations[currentLanguage].submitBtn;
   document.getElementById("backBtn").textContent = translations[currentLanguage].backBtn;
