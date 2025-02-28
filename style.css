@@ -1,9 +1,9 @@
 #languageToggle {
   display: block;
-   width: 250px; /* Wider button */
+  width: 250px; /* Wider button */
   margin: 20px auto; /* Centered */
   padding: 15px 20px;
-  font-size: 18px; /*larger font size */
+  font-size: 18px; /* Larger font size */
   color: white;
   background-color: #a2d5f2; /* Pastel Blue color */
   border: none;
@@ -16,6 +16,7 @@
 #languageToggle:hover {
   background-color: #2980b9; /* Darker blue on hover */
 }
+
 #prakritiVikritiQuiz {
   max-width: 700px;
   margin: 20px auto;
@@ -49,7 +50,7 @@
 }
 
 .option:hover {
-  background-color: #2980b9; /* Lighter pastel red on hover */
+  background-color: #ffcdd2; /* Lighter pastel red on hover */
 }
 
 .selected {
@@ -60,14 +61,15 @@
 button.submit-btn {
   display: block;
   width: 250px; /* Wider button */
-  background-color: #a2d5f2; /* Pastel blue for submit button */
-  color: white;
+  margin: 20px auto; /* Centered */
   padding: 15px 20px;
+  font-size: 18px; /* Larger font size */
+  color: white;
+  background-color: #a2d5f2; /* Pastel blue */
   border: none;
   border-radius: 10px;
-  font-size: 20px; /* Larger font size for button */
   cursor: pointer;
-  margin : 20px auto; /* Centered */
+  text-align: center;
   transition: background-color 0.3s ease;
 }
 
@@ -89,8 +91,9 @@ button.submit-btn:hover {
   text-align: center;
   transition: background-color 0.3s ease;
 }
+
 .back-btn:hover {
-  background-color: #2980b9; /* Darker blue on hover */
+  background-color: #2980b9; /* Slightly darker pastel blue on hover */
 }
 
 /* Responsive Design */
